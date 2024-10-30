@@ -1,5 +1,7 @@
 import './App.css';
+import Header from './components/Header';
 import UserList from './components/product';
+import MediaControlCard from './components/card';
 
 // axios.get('https://dummyjson.com/products').then(response => [console.log(response.data)])
 // .catch(error => {console.error(error)})
@@ -7,8 +9,10 @@ import UserList from './components/product';
 function App() {
   return (
     <div className="App">
-      <h1>User List</h1>
+      <Header />
+      <h1>User List from AXIOS API</h1>
       <UserList />
+      {/* <MediaControlCard /> */}
     </div>
   );
 }

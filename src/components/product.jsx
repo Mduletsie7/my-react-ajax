@@ -27,9 +27,10 @@ if (error) return <p>Error: {error}</p>
 return (
     <ul>
         {users.map(user =>(
-            <li key={user.id}>
+            <span key={user.id}>
                 <h1>{user.firstName} {user.lastName}</h1>
-            </li>
+                <h2>{user.email}</h2>
+            </span>
         ))}
     </ul>
 );
